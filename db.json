@@ -1,0 +1,122 @@
+{
+  "blogs": [
+    {
+      "id": "2",
+      "title": "JavaScript ES6 Qo'llanmasi",
+      "author": "Ali Valiyev",
+      "category": "JavaScript",
+      "image": "https://picsum.photos/600/400?random=2",
+      "description": "ES6 imkoniyatlarini o'rganing.",
+      "content": "Arrow Function, Destructuring, Spread Operator, Template Literal va boshqa yangi imkoniyatlarni ushbu maqolada ko'rib chiqamiz.",
+      "createdAt": "2026-07-07",
+      "readingTime": "7 min",
+      "views": 980,
+      "likes": 180
+    },
+    {
+      "id": "3",
+      "title": "CSS Flexbox To'liq Dars",
+      "author": "Jasur Karimov",
+      "category": "CSS",
+      "image": "https://picsum.photos/600/400?random=3",
+      "description": "Flexbox bilan responsive dizayn yarating.",
+      "content": "display:flex, justify-content, align-items va flex-wrap xususiyatlari yordamida layout yaratishni o'rganamiz.",
+      "createdAt": "2026-07-05",
+      "readingTime": "6 min",
+      "views": 2100,
+      "likes": 432
+    },
+    {
+      "id": "4",
+      "title": "Tailwind CSS Boshlanishi",
+      "author": "Aziza Rahimova",
+      "category": "Tailwind",
+      "image": "https://picsum.photos/600/400?random=4",
+      "description": "Tailwind CSS bilan tez UI yarating.",
+      "content": "Tailwind utility class'lari yordamida zamonaviy va responsive interfeys yaratish juda oson.",
+      "createdAt": "2026-07-04",
+      "readingTime": "4 min",
+      "views": 840,
+      "likes": 155
+    },
+    {
+      "id": "5",
+      "title": "Node.js REST API",
+      "author": "Bekzod Tursunov",
+      "category": "Backend",
+      "image": "https://picsum.photos/600/400?random=5",
+      "description": "Express yordamida REST API yaratish.",
+      "content": "CRUD amallarini Express.js va JSON Server bilan qanday bajarishni bosqichma-bosqich ko'ramiz.",
+      "createdAt": "2026-07-02",
+      "readingTime": "9 min",
+      "views": 1540,
+      "likes": 290
+    },
+    {
+      "id": "6",
+      "title": "Git va GitHub Asoslari",
+      "author": "Asadbek",
+      "category": "Git",
+      "image": "https://picsum.photos/600/400?random=6",
+      "description": "Version Control tizimi bilan ishlash.",
+      "content": "Repository yaratish, commit, branch va pull request jarayonlarini amalda o'rganamiz.",
+      "createdAt": "2026-06-30",
+      "readingTime": "8 min",
+      "views": 1120,
+      "likes": 240
+    },
+    {
+      "id": "7",
+      "title": "TypeScript Nima?",
+      "author": "Diyor Xasanov",
+      "category": "TypeScript",
+      "image": "https://picsum.photos/600/400?random=7",
+      "description": "JavaScript'ni TypeScript bilan kuchaytiring.",
+      "content": "Type, Interface, Enum va Generic tushunchalarini sodda misollar orqali o'rganamiz.",
+      "createdAt": "2026-06-28",
+      "readingTime": "10 min",
+      "views": 910,
+      "likes": 170
+    },
+    {
+      "id": "8",
+      "title": "React Hooks",
+      "author": "Asadbek",
+      "category": "React",
+      "image": "https://picsum.photos/600/400?random=8",
+      "description": "Eng muhim React Hook'lar.",
+      "content": "useState, useEffect, useMemo, useCallback va useRef hook'larini misollar bilan ko'rib chiqamiz.",
+      "createdAt": "2026-06-25",
+      "readingTime": "12 min",
+      "views": 3025,
+      "likes": 620
+    },
+    {
+      "id": "9",
+      "title": "MongoDB Boshlanishi",
+      "author": "Nodirbek",
+      "category": "Database",
+      "image": "https://picsum.photos/600/400?random=9",
+      "description": "NoSQL bazasi bilan ishlash.",
+      "content": "Collection, Document, Query va Aggregation haqida amaliy misollar bilan tanishamiz.",
+      "createdAt": "2026-06-22",
+      "readingTime": "11 min",
+      "views": 1330,
+      "likes": 215
+    },
+    {
+      "id": "10",
+      "title": "Frontend Developer Roadmap 2026",
+      "author": "Asadbek",
+      "category": "Frontend",
+      "image": "https://picsum.photos/600/400?random=10",
+      "description": "Junior Frontend bo'lish uchun yo'l xaritasi.",
+      "content": "HTML, CSS, JavaScript, React, Git, API, TypeScript va Deploy bosqichlarini ketma-ket o'rganish tavsiya etiladi.",
+      "createdAt": "2026-06-20",
+      "readingTime": "15 min",
+      "views": 4500,
+      "likes": 920
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
