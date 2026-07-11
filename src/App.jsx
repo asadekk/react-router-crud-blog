@@ -11,6 +11,7 @@ import EditBlog, {
 import {
   action as deleteAction
 } from "./pages/DeleteBlog";
+import ErrorPages from './pages/ErrorPages'
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "blog/delete/:id",
         action: deleteAction
+      },
+      {
+        path: "*",
+        element: <ErrorPages />
       }
     ]
   }

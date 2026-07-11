@@ -10,49 +10,188 @@ body {
 
 /* ======== HEADER ======== */
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+/* ===========================
+   HEADER
+=========================== */
 
-  display: flex;
-  justify-content: end;
-  align-items: center;
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
-  padding: 18px 8%;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid #e5e7eb;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+
+    background: rgba(255,255,255,.82);
+    backdrop-filter: blur(16px);
+
+    border-bottom: 1px solid rgba(226,232,240,.9);
+
+    box-shadow: 0 10px 30px rgba(15,23,42,.05);
 }
 
-/* ======== NAV LINKS ======== */
+.header-container{
 
-header a {
-  text-decoration: none;
-  color: #374151;
-  font-size: 17px;
-  font-weight: 600;
-  padding: 10px 22px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+    width:90%;
+    max-width:1400px;
+
+    margin:auto;
+
+    height:75px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    letter-spacing:-1px;
+
+    cursor:pointer;
+
+}
+
+.logo span{
+
+    color:#2563eb;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+.navbar a{
+
+    position:relative;
+
+    text-decoration:none;
+
+    color:#475569;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    padding:11px 18px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
 }
 
 /* Hover */
 
-header a:hover {
-  background: #2563eb;
-  color: #fff;
+.navbar a:hover{
+
+    color:#2563eb;
+
+    background:#eff6ff;
+
 }
 
-/* Active Link */
+/* Active */
 
-header a.active {
-  background: #2563eb;
-  color: white;
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+.navbar a.active{
+
+    background:#2563eb;
+
+    color:white;
+
+    box-shadow:
+    0 10px 20px rgba(37,99,235,.25);
+
 }
 
+/* Underline Animation */
+
+.navbar a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#2563eb;
+
+    transition:.3s;
+
+    transform:translateX(-50%);
+
+}
+
+.navbar a:hover::after{
+
+    width:60%;
+
+}
+
+.navbar a.active::after{
+
+    display:none;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.header-container{
+
+flex-direction:column;
+
+height:auto;
+
+padding:15px 0;
+
+gap:15px;
+
+}
+
+.navbar{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+}
 /* ======== MAIN ======== */
 
 main {
@@ -521,4 +660,108 @@ grid-column:auto;
 
 .edit-btn:hover {
     color: #2563eb;
+}
+.error-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eff6ff, #ffffff);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.error-container {
+  max-width: 700px;
+  text-align: center;
+}
+
+.error-code {
+  font-size: 170px;
+  font-weight: 800;
+  line-height: 1;
+  color: #2563eb;
+  letter-spacing: -8px;
+}
+
+.error-title {
+  font-size: 42px;
+  color: #111827;
+  margin-top: 20px;
+}
+
+.error-text {
+  margin: 20px auto 40px;
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 550px;
+}
+
+.error-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.home-btn,
+.back-btn {
+  padding: 15px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.home-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.home-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+}
+
+.back-btn {
+  background: white;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+}
+
+.back-btn:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:768px) {
+
+  .error-code {
+    font-size: 120px;
+  }
+
+  .error-title {
+    font-size: 30px;
+  }
+
+  .error-text {
+    font-size: 16px;
+  }
+
+  .error-buttons {
+    flex-direction: column;
+  }
+
+  .home-btn,
+  .back-btn {
+    width: 100%;
+  }
 }

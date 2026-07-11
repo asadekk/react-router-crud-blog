@@ -4,20 +4,28 @@ import '../App.css'
 function MainLayout() {
   return (
     <>
-      <header>
-        <nav>
-          <NavLink to="/" end>
-            Home
-          </NavLink>
+      <header className="header">
+        <div className="header-container">
 
-          <NavLink to="/blog">
-            Blog
-          </NavLink>
+          <h2 className="logo">
+            Dev<span>Blog</span>
+          </h2>
 
-           <NavLink to="/blog/add">
-            Add 
-          </NavLink>
-        </nav>
+          <nav className="navbar">
+            <NavLink to="/" end>
+              Home
+            </NavLink>
+
+            <NavLink to="/blog">
+              Blog
+            </NavLink>
+
+            <NavLink to="blog/add">
+              Add Blog
+            </NavLink>
+          </nav>
+
+        </div>
       </header>
 
       <main>
