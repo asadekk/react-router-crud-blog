@@ -23,6 +23,9 @@ function MainLayout() {
             <NavLink to="blog/add">
               Add Blog
             </NavLink>
+            <NavLink to="/product">
+              Product
+            </NavLink>
           </nav>
 
         </div>

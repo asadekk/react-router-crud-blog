@@ -765,3 +765,197 @@ grid-column:auto;
     width: 100%;
   }
 }
+/* =========================
+   PRODUCTS PAGE
+========================= */
+
+.products-page{
+
+    width:90%;
+    max-width:1400px;
+
+    margin:50px auto;
+
+}
+
+/* =========================
+   FILTER
+========================= */
+
+.filter-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:45px;
+
+}
+
+.filter-buttons button{
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:white;
+
+    color:#374151;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+
+}
+
+.filter-buttons button:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+    transform:translateY(-3px);
+
+}
+
+/* =========================
+   GRID
+========================= */
+
+.products-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+/* =========================
+   CARD
+========================= */
+
+.product-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.product-image{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:#eff6ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+}
+
+.product-title{
+
+    font-size:24px;
+
+    color:#111827;
+
+    margin-bottom:12px;
+
+}
+
+.product-category{
+
+    display:inline-block;
+
+    padding:6px 15px;
+
+    border-radius:30px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:13px;
+
+    margin-bottom:18px;
+
+}
+
+.product-price{
+
+    color:#16a34a;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.filter-buttons{
+
+gap:10px;
+
+}
+
+.filter-buttons button{
+
+width:100%;
+
+}
+
+.products-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
